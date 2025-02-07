@@ -860,7 +860,7 @@ footer {
     }
     .hero-baner {
         padding: 40px 0;
-        background-position-y: 320px;
+        background-position-y: 280px !important;
         background-size: 70%;
         height: auto;
     }
@@ -908,7 +908,7 @@ footer {
     .hero-img-box-content {
         background-color: rgb(255 255 255 / 100%);
         /* padding: 70px 30px; */
-        border-radius: 250px;
+        border-radius: 10px !important;
         display: flex
 ;
         flex-direction: column;
