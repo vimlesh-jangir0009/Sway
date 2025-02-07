@@ -104,6 +104,49 @@ flex-wrap: wrap;
     align-items: center;
     width: 100%;
 }
+/* search icon click css */
+span.searchicon {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.searchiconblock{
+    display: block !important;
+ 
+}
+input#searchbox {
+    padding: 13px 20px;
+    width: 33%;
+    border: none;
+    outline: none;
+    background: beige;
+    color: #000;
+    font-size: 16px;
+    border-bottom-left-radius: 21px;
+    border-top-right-radius: 21px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+i#searchcloseicon {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 29px;
+    cursor: pointer;
+}
+/*  */
 .nav-icon {
     padding: 0px 8px;
     color: #000;
@@ -767,7 +810,7 @@ footer {
     /* hero section query */
     section.nev {
         position: absolute;
-        width: 50%;
+        width: 75%;
         top: 90px;
         /* background-color: #fff; */
         z-index: 8778;
@@ -872,6 +915,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .hero-third-box-content {
+        padding: 75px 22px !important;
+    }
     .font-22 {
         font-size: 1.9rem;
         color: #000000;
@@ -891,10 +937,6 @@ footer {
     }
     .hero-img-box {
         margin: 10px 10px;
-    }
-    .hero-third-box-content {
-        padding: 90px 40px;
-        background-color: rgba(255, 255, 255, 0.5);
     }
     .challenging-img-box {
         background-position: 0% 0%, 100% 83%;
@@ -1065,10 +1107,18 @@ footer {
         margin-top: 10px;
     }
     .backtotopicon {
-        bottom: 40px;
+        bottom: 50px;
         right: 19px;
-        font-size: 20px;
+        font-size: 25px;
     }
+/* searchicon */
+span.searchicon {
+    height: 62vh;
+}
+input#searchbox {
+    width: 90%;
+}
+
   }
   @media screen and (max-width:767px) {
 
@@ -1088,9 +1138,13 @@ button.contect-btn {
     padding: 10px 15px 10px 15px;
 }
 .hero-baner {
-    background-position-y: 260px;
+    background-position-y: 280px;
     padding: 50px 0;
     height: auto;
+}   
+ .hero-third-box-content {
+    padding: 75px 25px;
+    text-align: center;
 }
 .hero-content p {
     padding: 15px 0 20px 0;
