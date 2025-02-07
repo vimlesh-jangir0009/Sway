@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script>
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $(".nev").toggleClass("mnavtransformzeero");
+
+  });
+});
+    </script>
+
+
 </head>
 
 <body>
@@ -36,18 +46,29 @@
     </div>
   </div>
 
-  <section class="nev">
+  <div class="mnav">
+    <div class="mnavflex">
+      <div class="heading">
+        <h2 class="ps-3">Sway</h2>
+      </div>
+      <div class="mnavicon">
+        <i class="bi bi-list toggle" id="toggle"></i>
+      </div>
+    </div>
+  </div>
+
+  <section class="nev navtransform">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
-        <!-- <div class="nav-flex"> -->
+        <div class="nav-flex">
         <div class="nav-brand">
           <a class="navbar-brand text-dark fw-bold" href="#">Sway</a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button> -->
+        <div class="" id="navbarSupportedContent">
 
           <ul class="navbar-nav me-0  ms-auto mb-2 mb-lg-0">
 
@@ -161,8 +182,8 @@
       </div>
 
       <div class="margin">
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-10">
             <div class="hero-img-box">
               <img src="./css/images/Rectangle 64.png" alt="Rectangle 64.png">
               <div class="hero-img-box-content">
@@ -174,7 +195,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-10">
             <div class="hero-img-box">
               <img src="./css/images/Rectangle 65.png" alt="Rectangle 64.png">
               <div class="hero-img-box-content">
@@ -186,7 +207,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-10">
             <div class="hero-third-box-content media-f-color">
               <h5 class="hero-img-box-content-h font-22">Professional Bikes</h5>
               <p class="hero-img-box-content-p font-16">Our trail bikes are equally capable on steep climbs
@@ -199,7 +220,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-10">
             <div class="hero-img-box">
               <img src="./css/images/Rectangle 66.png" alt="Rectangle 64.png">
               <div class="hero-img-box-content">
@@ -439,19 +460,19 @@
 
       <div class="home-container">
         <div class="row justify-content-evenly">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-4">
             <div class="home-div text-center">
               <img src="./css/images/home-decor-icon1 (1) 1.png" alt="home-decor-icon1 (1) 1.png">
               <h4 class="font-22">Home Delivery</h4>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-4">
             <div class="home-div text-center">
               <img src="./css/images/home-decor-icon2 2.png" alt="home-decor-icon1 (2) 1.png">
               <h4 class="font-22">Financing Available</h4>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-4">
             <div class="home-div text-center">
               <img src="./css/images/home-decor-icon3 (1) 1.png" alt="home-decor-icon1 (3) 1.png">
               <h4 class="font-22">5 Year Guarantee</h4>
@@ -684,11 +705,14 @@
     </div>
     <!-- <i class="bi bi-arrow-left-circle "></i>
     <i class="bi bi-arrow-right-"></i> -->
-    <div class="swiper-pagination"id="pagination-dotes"></div>
-    <div class="swiper-button-prev"id="prev-btn"></div>
-    <div class="circle swiper-button-next"id="next-btn"></div>
+    <!-- <div class="swiper-pagination mb-4"id="pagination-dotes"></div>  -->
+    <div class="sliding-arrow">
+      <i class="bi bi-arrow-left-circle" id="prev-btn"></i>
+       <i class="bi bi-arrow-right-circle" id="next-btn"></i>
+      </div>
   </section>
-
+  
+  
 
  
 
@@ -910,10 +934,10 @@
             <h6 class="font-36">We ship directly to your door</h6>
             <div>
               <div class="we-ship-flex">
-                <div class="col-md-2 d-flex justify-content-center ">
+                <div class="col-md-2 col-2 d-flex justify-content-center ">
                   <div class="we-ship-img"><i class="bi bi-basket3"></i></div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-10">
                   <h5 class="font-22">New bikes are hitting stock daily</h5>
                   <p class="font-16">Be the first to lock up your dream<br class="d-sm-block d-none ">
                     bike while they last.</p>
@@ -923,10 +947,10 @@
 
             <div>
               <div class="we-ship-flex">
-                <div class="col-md-2 d-flex justify-content-center ">
+                <div class="col-md-2 col-2 d-flex justify-content-center ">
                   <div class="we-ship-img"><i class="bi bi-recycle"></i></div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-10">
                   <h5 class="font-22">New bikes are hitting stock daily</h5>
                   <p class="font-16">Be the first to lock up your dream<br class="d-sm-block d-none ">
                     bike while they last.</p>
@@ -1079,7 +1103,7 @@
   <div class="container">
     <div class="sway-footer-head">
          <div class="d-flex justify-content-between align-items-center flex-wrap">
-          <div class="footer-ul-div">
+          <div class="footer-ul-div col-4">
             <ul class="footer-ul">
               <li class="footer-li"><a href="#">About</a></li>
               <li class="footer-li"><a href="#">Services</a></li>
@@ -1088,7 +1112,7 @@
               <li class="footer-li"><a href="#">Contect us</a></li>
             </ul>
           </div>
-           <div class="footer-i-align">
+           <div class="footer-i-align col-1">
              <i class="bi bi-facebook footer-i"></i>
             <i class="bi bi-instagram footer-i"></i>
             <i class="bi bi-twitter-x footer-i"></i>
@@ -1101,7 +1125,7 @@
    <div class="footer-links-list">
     <div class="footer-box-flex">
       <div class="col-md-8">
-        <div  class="row">
+        <div  class="row justify-content-between">
       <div class="footer-box">
         <div class="footer-about">
           <h6>About</h6>
@@ -1115,7 +1139,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="footer-about">
+        <div class="footer-about text-end">
           <h6>Products</h6>
           <ul>
             <li><a href="#">Primary blocks</a></li>
@@ -1139,7 +1163,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="footer-about">
+        <div class="footer-about text">
           <h6>Follow us</h6>
           <ul>
             <li><a href="#">Twitter</a></li>
@@ -1167,8 +1191,9 @@
 
     </div>
    </div>
-
-<div class="text-center Terms "><h6 class="font-16">Sways by keydesign. All Rights Reserved Terms of Use Privacy Policy</h6></div>
+  <div class="backtotoparrow"> <a href="#"><i class="bi bi-arrow-up-short backtotopicon"></i></a></div>
+<div class="text-center Terms "><h6 class="font-16">Sways by keydesign. All Rights Reserved Terms of Use Privacy Policy</h6>
+</div>
 
   </div>
 </footer>
@@ -1199,9 +1224,9 @@
         },
       },
      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        el: ".swiper-pagination",
+        nextEl: ".bi-arrow-right-circle",
+        prevEl: ".bi-arrow-left-circle",
+        // el: ".swiper-pagination",
       },
       // pagination: {
         
